@@ -296,4 +296,103 @@ section.search-box form.search input[type='submit']:hover {
   background: linear-gradient(#ff4716, #ff6c22);
   border-bottom: 3px solid #ee5124;
 }
+section.info-box .wrapper {
+  display: flex;
+  align-items: stretch;
+}
+section.info-box .wrapper .video {
+  width: 50%;
+  background: black;
+  color: #fff;
+  padding: 41px 0;
+}
+section.info-box .wrapper .video img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+section.info-box .wrapper .video figure {
+  position: relative;
+}
+section.info-box .wrapper .video figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.info-box .wrapper .video figure figcaption a {
+  color: inherit;
+  margin-right: 30px;
+}
+section.info-box .wrapper .video figure figcaption a:hover {
+  color: #ffea00;
+}
+section.info-box .wrapper .video figure figcaption a:hover .play-icon {
+  background: rgba(0, 0, 0, 0.35);
+}
+section.info-box .wrapper .video figure figcaption .play-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 90px;
+  font-size: 25px;
+  display: block;
+}
+section.info-box .wrapper .video figure figcaption .title-data .video-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 33px;
+  margin-bottom: 5px;
+}
+section.info-box .wrapper .video figure figcaption .title-data .video-subtitle {
+  font-size: 12px;
+}
+section.info-box .wrapper .author {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: #36a928 url("img/additional/man.jpg") bottom right no-repeat;
+}
+section.info-box .wrapper .author i.fa-quote-left {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 100px;
+  top: 0;
+  left: 0;
+  margin-top: 35px;
+  margin-left: -30px;
+}
+section.info-box .wrapper .author .data-author {
+  color: #fff;
+  margin-left: 60px;
+  max-width: 220px;
+}
+section.info-box .wrapper .author .data-author span.author-name {
+  display: block;
+  font-family: 'PT Serif', serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 24px;
+}
+section.info-box .wrapper .author .data-author span.author-prof {
+  display: block;
+  font-size: 12px;
+  color: #b8ece8;
+  margin-bottom: 16px;
+}
+section.info-box .wrapper .author .data-author p.author-description {
+  font-family: 'PT Serif', serif;
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-style: italic;
+}
 /*# sourceMappingURL=style.css.map */

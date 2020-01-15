@@ -216,4 +216,84 @@ body .container {
   font-size: 54px;
   text-shadow: 7px 7px 0 rgba(0, 0, 0, 0.1);
 }
+section.about-us {
+  padding: 30px 0 50px 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: #a07258;
+}
+section.about-us h1.title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 54px;
+  display: inline-block;
+  margin-bottom: 25px;
+  line-height: 90px;
+  border-bottom: 1px solid rgba(160, 114, 88, 0.3);
+}
+section.about-us span.subtitle {
+  display: block;
+  font-family: 'PT Serif', serif;
+  font-size: 23px;
+  padding: 0 9%;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+section.about-us p.description {
+  font-size: 12px;
+  padding: 0 11%;
+  line-height: 18px;
+}
+section.search-box {
+  margin-bottom: 60px;
+}
+section.search-box form.search {
+  display: flex;
+}
+section.search-box form.search input[type='text'] {
+  padding: 0 25px;
+  margin: 0;
+  border: 0;
+  width: calc(100% - 181px);
+  height: 78px;
+  border-top: 3px solid #ffeb90;
+  border-bottom: 3px solid #ffeb90;
+  border-left: 3px solid #ffeb90;
+  font-size: 22px;
+  color: #a07258;
+  font-family: 'PT Serif', serif;
+  box-sizing: border-box;
+}
+section.search-box form.search input[type='text']::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(160, 114, 88, 0.3);
+}
+section.search-box form.search input[type='text']::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(160, 114, 88, 0.3);
+}
+section.search-box form.search input[type='text']:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(160, 114, 88, 0.3);
+}
+section.search-box form.search input[type='text']:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(160, 114, 88, 0.3);
+}
+section.search-box form.search input[type='submit'] {
+  background: linear-gradient(#ff6c22, #ff4716);
+  color: #fff;
+  font-family: 'Fredoka One', cursive;
+  font-size: 22px;
+  height: 78px;
+  width: 181px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-bottom: 3px solid #e94415;
+}
+section.search-box form.search input[type='submit']:hover {
+  cursor: pointer;
+  background: linear-gradient(#ff4716, #ff6c22);
+  border-bottom: 3px solid #ee5124;
+}
 /*# sourceMappingURL=style.css.map */

@@ -248,6 +248,7 @@ section.search-box {
 }
 section.search-box form.search {
   display: flex;
+  font-family: 'Fredoka One', cursive;
 }
 section.search-box form.search input[type='text'] {
   padding: 0 25px;
@@ -279,10 +280,9 @@ section.search-box form.search input[type='text']:-moz-placeholder {
   /* Firefox 18- */
   color: rgba(160, 114, 88, 0.3);
 }
-section.search-box form.search input[type='submit'] {
+section.search-box form.search button[type='submit'] {
   background: linear-gradient(#ff6c22, #ff4716);
   color: #fff;
-  font-family: 'Fredoka One', cursive;
   font-size: 22px;
   height: 78px;
   width: 181px;
@@ -291,7 +291,7 @@ section.search-box form.search input[type='submit'] {
   margin: 0;
   border-bottom: 3px solid #e94415;
 }
-section.search-box form.search input[type='submit']:hover {
+section.search-box form.search button[type='submit']:hover {
   cursor: pointer;
   background: linear-gradient(#ff4716, #ff6c22);
   border-bottom: 3px solid #ee5124;
@@ -394,5 +394,167 @@ section.info-box .wrapper .author .data-author p.author-description {
   line-height: 24px;
   margin-bottom: 0;
   font-style: italic;
+}
+section.shop-slider .shop-carousel {
+  background: #fff;
+  display: flex;
+}
+section.shop-slider .shop-carousel .item {
+  width: 25%;
+  box-sizing: border-box;
+  border-right: 1px solid #f8f4f3;
+  max-height: 371px;
+  overflow: hidden;
+}
+section.shop-slider .shop-carousel .item:hover .item-image {
+  margin-top: -70px;
+  -webkit-transition: all 300ms ease-in-out;
+  /* Safary */
+  transition: all 500ms ease-in-out;
+}
+section.shop-slider .shop-carousel .item .item-image {
+  min-height: 273px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: all 300ms ease-in-out;
+  /* Safary */
+  transition: all 500ms ease-in-out;
+}
+section.shop-slider .shop-carousel .item h4.item-title {
+  color: #686868;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0;
+}
+section.shop-slider .shop-carousel .item span.item-price {
+  padding: 20px 0;
+  display: block;
+  font-size: 26px;
+  color: #000;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+}
+section.shop-slider .shop-carousel .item a.item-button {
+  display: block;
+  width: 100%;
+  height: 67px;
+  line-height: 67px;
+  border-bottom: 3px solid #e7301e;
+  background: linear-gradient(#f74f31, #f33420);
+  font-family: 'Fredoka One', cursive;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+}
+section.shop-slider .shop-carousel .item a.item-button i {
+  color: #ffea00;
+  font-size: 20px;
+}
+section.shop-slider .shop-carousel .item a.item-button:hover {
+  background: linear-gradient(#f33420, #f74f31);
+}
+section.shop-slider .top-title-line {
+  min-height: 81px;
+  background: linear-gradient(#ff6c22, #ff4616);
+  display: flex;
+  align-items: center;
+}
+section.shop-slider .top-title-line .shop-slider-navigation {
+  display: flex;
+  align-items: stretch;
+  cursor: pointer;
+}
+section.shop-slider .top-title-line .shop-slider-navigation .left,
+section.shop-slider .top-title-line .shop-slider-navigation .right {
+  width: 55px;
+  height: 81px;
+  background: #eb4516;
+  color: #ffcaae;
+  font-size: 20px;
+  text-align: center;
+  line-height: 81px;
+}
+section.shop-slider .top-title-line .shop-slider-navigation .left:hover,
+section.shop-slider .top-title-line .shop-slider-navigation .right:hover {
+  background: #e03e10;
+  color: #fff;
+}
+section.shop-slider .top-title-line .shop-slider-navigation .left {
+  border-right: 1px solid #df4115;
+}
+section.shop-slider .top-title-line .shop-box-title {
+  flex-grow: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 43px;
+  font-family: 'Fredoka One', cursive;
+}
+section.shop-slider .top-title-line .shop-category {
+  font-size: 14px;
+  color: #ffeb90;
+  font-family: 'PT Serif', serif;
+  padding-right: 28px;
+}
+section.shop-slider .top-title-line .shop-category .dropdown-list {
+  cursor: pointer;
+}
+section.shop-slider .top-title-line .shop-category span.text {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  border-bottom: 1px dashed #fff;
+}
+section.shop-slider .top-title-line .shop-category i {
+  font-size: 8px;
+}
+section.information-box .banana-box {
+  width: 100%;
+  min-height: 516px;
+  background: url("img/additional/bg.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section.information-box .banana-box h3.title-box {
+  font-size: 43px;
+  font-family: 'Fredoka One', cursive;
+  color: #fff;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.74em;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 35px;
+}
+section.information-box .banana-box p.description {
+  font-size: 24px;
+  font-family: 'PT Serif', serif;
+  color: #fff;
+  text-shadow: 2px 2px 0 rgba(255, 116, 43, 0.22);
+  line-height: 36px;
+  padding: 0 14%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+section.information-box .banana-box a.info-link {
+  display: block;
+  color: #ff742b;
+  font-size: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #fff;
+  box-shadow: 2px 2px 0 rgba(255, 116, 43, 0.22);
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: all 300ms ease-in-out;
+}
+section.information-box .banana-box a.info-link:hover {
+  box-shadow: 0 0 0 rgba(255, 116, 43, 0.22);
+  transition: all 300ms ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

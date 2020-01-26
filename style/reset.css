@@ -44,3 +44,6 @@ table {
 input:focus, button:focus {
     outline: none!important;
 }
+a {
+    text-decoration: none;
+}
